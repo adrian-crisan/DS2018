@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>View All</title>
+</head>
+<body>
+
+<table style="display: inline-block; border: 3px solid; float: left; ">
+		<thead>
+		<tr>
+			<th> First Name </th>
+			<th> Last Name </th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr th:each="customer : ${customers}">
+				<td><span th:text="${customer.firstName}"> First Name </span></td>
+				<td><span th:text="${customer.lastName}"> Last Name </span></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+ 
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+   <servlet-name>LoginServlet</servlet-name>
+   <servlet-class>servlets.LoginServlet</servlet-class>
+  </servlet>
+    <servlet>
+   <servlet-name>AdminServlet</servlet-name>
+   <servlet-class>servlets.AdminServlet</servlet-class>
+  </servlet>
+    <servlet>
+   <servlet-name>UserServlet</servlet-name>
+   <servlet-class>servlets.UserServlet</servlet-class>
+  </servlet>
+   <servlet>
+   <servlet-name>GetFlightsServlet</servlet-name>
+   <servlet-class>servlets.GetFlightsServlet</servlet-class>
+  </servlet>
+     <servlet>
+   <servlet-name>CreateFlightServlet</servlet-name>
+   <servlet-class>servlets.CreateFlightServlet</servlet-class>
+  </servlet>
+       <servlet>
+   <servlet-name>UpdateFlightServlet</servlet-name>
+   <servlet-class>servlets.UpdateFlightServlet</servlet-class>
+  </servlet>
+         <servlet>
+   <servlet-name>DeleteFlightServlet</servlet-name>
+   <servlet-class>servlets.DeleteFlightServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>LoginServlet</servlet-name>
+   <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+   <servlet-name>AdminServlet</servlet-name>
+   <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+   <servlet-name>UserServlet</servlet-name>
+   <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+   <servlet-name>GetFlightsServlet</servlet-name>
+   <url-pattern>/admin/flights</url-pattern>
+  </servlet-mapping>
+     <servlet-mapping>
+   <servlet-name>CreateFlightServlet</servlet-name>
+   <url-pattern>/admin/create</url-pattern>
+  </servlet-mapping>
+       <servlet-mapping>
+   <servlet-name>UpdateFlightServlet</servlet-name>
+   <url-pattern>/admin/update</url-pattern>
+  </servlet-mapping>
+         <servlet-mapping>
+   <servlet-name>DeleteFlightServlet</servlet-name>
+   <url-pattern>/admin/delete</url-pattern>
+  </servlet-mapping>
+  
+    <welcome-file-list>
+	<welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+</web-app>

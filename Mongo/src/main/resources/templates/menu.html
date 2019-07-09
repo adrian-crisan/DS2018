@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+	  
+<head>
+<meta charset="ISO-8859-1">
+<title>Menu</title>
+</head>
+<body>
+
+<form th:action="@{/viewAll}" method="post">
+		<input type="submit" value="View All Customers" />
+		</form>
+		
+<form th:action="@{/viewByFirstName}" method="post">
+		<input type="submit" value="View By First Name" />
+		</form>
+		
+<form th:action="@{/insert}" method="post">
+		<input type="submit" value="Insert customer" />
+		</form>
+		
+<form th:action="@{/delete}" method="post">
+		<input type="submit" value="Delete customer" />
+		</form>
+		
+</body>
+</html>
